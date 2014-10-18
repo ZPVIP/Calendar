@@ -24,7 +24,4 @@
 @property (weak) IBOutlet NSPopover *popover;
 @property (weak) IBOutlet NSWindow *window;
 @property (weak) IBOutlet WebView *webView;
-- (IBAction)openSina:(id)sender;
-- (IBAction)openHome:(id)sender;
-- (IBAction)updateClick:(id)sender;
 @end

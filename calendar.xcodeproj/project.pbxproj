@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04580F2C15DA2A330023BB41 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 04580F2B15DA2A330023BB41 /* home.png */; };
-		04580F3F15DA3C470023BB41 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04580F3315DA3C470023BB41 /* readme.txt */; };
-		04580F4015DA3C470023BB41 /* THDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580F3515DA3C470023BB41 /* THDispatchQueue.m */; };
-		04580F4115DA3C470023BB41 /* THDownloadWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580F3715DA3C470023BB41 /* THDownloadWebService.m */; };
-		04580F4215DA3C470023BB41 /* THPostWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580F3915DA3C470023BB41 /* THPostWebService.m */; };
-		04580F4315DA3C470023BB41 /* THWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580F3C15DA3C470023BB41 /* THWebService.m */; };
-		04580F4415DA3C470023BB41 /* THWebUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580F3E15DA3C470023BB41 /* THWebUtility.m */; };
 		E75748B4153FBD8700C2E5E1 /* calendar.icns in Resources */ = {isa = PBXBuildFile; fileRef = E75748B3153FBD8700C2E5E1 /* calendar.icns */; };
 		E7574969153FECA200C2E5E1 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = E7574949153FECA200C2E5E1 /* status.png */; };
 		E757496A153FECA200C2E5E1 /* status1.png in Resources */ = {isa = PBXBuildFile; fileRef = E757494A153FECA200C2E5E1 /* status1.png */; };
@@ -57,23 +50,9 @@
 		E77057861538844800AE3356 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E77057851538844800AE3356 /* AppDelegate.m */; };
 		E77057891538844800AE3356 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77057871538844800AE3356 /* MainMenu.xib */; };
 		E7890D611540021600D57A9F /* quit.png in Resources */ = {isa = PBXBuildFile; fileRef = E7890D601540021600D57A9F /* quit.png */; };
-		E7DF5B88153FFC6000D685C4 /* sina.png in Resources */ = {isa = PBXBuildFile; fileRef = E7DF5B87153FFC6000D685C4 /* sina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04580F2B15DA2A330023BB41 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
-		04580F3315DA3C470023BB41 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		04580F3415DA3C470023BB41 /* THDispatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDispatchQueue.h; sourceTree = "<group>"; };
-		04580F3515DA3C470023BB41 /* THDispatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDispatchQueue.m; sourceTree = "<group>"; };
-		04580F3615DA3C470023BB41 /* THDownloadWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDownloadWebService.h; sourceTree = "<group>"; };
-		04580F3715DA3C470023BB41 /* THDownloadWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDownloadWebService.m; sourceTree = "<group>"; };
-		04580F3815DA3C470023BB41 /* THPostWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPostWebService.h; sourceTree = "<group>"; };
-		04580F3915DA3C470023BB41 /* THPostWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPostWebService.m; sourceTree = "<group>"; };
-		04580F3A15DA3C470023BB41 /* THWebDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THWebDefine.h; sourceTree = "<group>"; };
-		04580F3B15DA3C470023BB41 /* THWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THWebService.h; sourceTree = "<group>"; };
-		04580F3C15DA3C470023BB41 /* THWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THWebService.m; sourceTree = "<group>"; };
-		04580F3D15DA3C470023BB41 /* THWebUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THWebUtility.h; sourceTree = "<group>"; };
-		04580F3E15DA3C470023BB41 /* THWebUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THWebUtility.m; sourceTree = "<group>"; };
 		E75748B3153FBD8700C2E5E1 /* calendar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = calendar.icns; sourceTree = "<group>"; };
 		E7574949153FECA200C2E5E1 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
 		E757494A153FECA200C2E5E1 /* status1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status1.png; sourceTree = "<group>"; };
@@ -110,7 +89,7 @@
 		E75D8C7F153FA13F00D7327A /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
 		E75D8C83153FA27300D7327A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E76B0E28153FA90300D19583 /* calendarHTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = calendarHTML; sourceTree = "<group>"; };
-		E770576E1538844800AE3356 /* calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E770576E1538844800AE3356 /* calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = calendar.app; path = ChinaCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77057721538844800AE3356 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E77057751538844800AE3356 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E77057761538844800AE3356 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -124,7 +103,6 @@
 		E77057851538844800AE3356 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E77057881538844800AE3356 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E7890D601540021600D57A9F /* quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quit.png; sourceTree = "<group>"; };
-		E7DF5B87153FFC6000D685C4 /* sina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,31 +118,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04580F3215DA3C470023BB41 /* THWebService */ = {
-			isa = PBXGroup;
-			children = (
-				04580F3315DA3C470023BB41 /* readme.txt */,
-				04580F3415DA3C470023BB41 /* THDispatchQueue.h */,
-				04580F3515DA3C470023BB41 /* THDispatchQueue.m */,
-				04580F3615DA3C470023BB41 /* THDownloadWebService.h */,
-				04580F3715DA3C470023BB41 /* THDownloadWebService.m */,
-				04580F3815DA3C470023BB41 /* THPostWebService.h */,
-				04580F3915DA3C470023BB41 /* THPostWebService.m */,
-				04580F3A15DA3C470023BB41 /* THWebDefine.h */,
-				04580F3B15DA3C470023BB41 /* THWebService.h */,
-				04580F3C15DA3C470023BB41 /* THWebService.m */,
-				04580F3D15DA3C470023BB41 /* THWebUtility.h */,
-				04580F3E15DA3C470023BB41 /* THWebUtility.m */,
-			);
-			path = THWebService;
-			sourceTree = "<group>";
-		};
 		E7574948153FEC4500C2E5E1 /* status */ = {
 			isa = PBXGroup;
 			children = (
 				E7890D601540021600D57A9F /* quit.png */,
-				E7DF5B87153FFC6000D685C4 /* sina.png */,
-				04580F2B15DA2A330023BB41 /* home.png */,
 				E7574949153FECA200C2E5E1 /* status.png */,
 				E757494A153FECA200C2E5E1 /* status1.png */,
 				E757494B153FECA200C2E5E1 /* status2.png */,
@@ -243,7 +200,6 @@
 		E77057781538844800AE3356 /* calendar */ = {
 			isa = PBXGroup;
 			children = (
-				04580F3215DA3C470023BB41 /* THWebService */,
 				E77057841538844800AE3356 /* AppDelegate.h */,
 				E77057851538844800AE3356 /* AppDelegate.m */,
 				E77057871538844800AE3356 /* MainMenu.xib */,
@@ -269,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E770576D1538844800AE3356 /* calendar */ = {
+		E770576D1538844800AE3356 /* ChinaCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E770578C1538844800AE3356 /* Build configuration list for PBXNativeTarget "calendar" */;
+			buildConfigurationList = E770578C1538844800AE3356 /* Build configuration list for PBXNativeTarget "ChinaCalendar" */;
 			buildPhases = (
 				E770576A1538844800AE3356 /* Sources */,
 				E770576B1538844800AE3356 /* Frameworks */,
@@ -281,7 +237,7 @@
 			);
 			dependencies = (
 			);
-			name = calendar;
+			name = ChinaCalendar;
 			productName = calendar;
 			productReference = E770576E1538844800AE3356 /* calendar.app */;
 			productType = "com.apple.product-type.application";
@@ -306,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E770576D1538844800AE3356 /* calendar */,
+				E770576D1538844800AE3356 /* ChinaCalendar */,
 			);
 		};
 /* End PBXProject section */
@@ -354,10 +310,7 @@
 				E7574986153FECA200C2E5E1 /* status29.png in Resources */,
 				E7574987153FECA200C2E5E1 /* status30.png in Resources */,
 				E7574988153FECA200C2E5E1 /* status31.png in Resources */,
-				E7DF5B88153FFC6000D685C4 /* sina.png in Resources */,
 				E7890D611540021600D57A9F /* quit.png in Resources */,
-				04580F2C15DA2A330023BB41 /* home.png in Resources */,
-				04580F3F15DA3C470023BB41 /* readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +323,6 @@
 			files = (
 				E770577F1538844800AE3356 /* main.m in Sources */,
 				E77057861538844800AE3356 /* AppDelegate.m in Sources */,
-				04580F4015DA3C470023BB41 /* THDispatchQueue.m in Sources */,
-				04580F4115DA3C470023BB41 /* THDownloadWebService.m in Sources */,
-				04580F4215DA3C470023BB41 /* THPostWebService.m in Sources */,
-				04580F4315DA3C470023BB41 /* THWebService.m in Sources */,
-				04580F4415DA3C470023BB41 /* THWebUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E770578C1538844800AE3356 /* Build configuration list for PBXNativeTarget "calendar" */ = {
+		E770578C1538844800AE3356 /* Build configuration list for PBXNativeTarget "ChinaCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E770578D1538844800AE3356 /* Debug */,

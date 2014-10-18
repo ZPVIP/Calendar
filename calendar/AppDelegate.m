@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "THWebService.h"
 
 @interface NSStatusBar(Private)
 - (id)_statusItemWithLength:(double)length withPriority:(int)priority;
@@ -50,67 +49,6 @@
 	LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemLast, NULL, NULL, url, NULL, NULL);
 	CFRelease(item);
     CFRelease(loginItems);
-    
-    //检测更新
-    [self updateCheck];
-    THWebService *webwervice = [[THWebService alloc] init];
-    webwervice.url = [NSURL URLWithString:@"http://myconfig.sinaapp.com/calendar/info.php"];
-    [webwervice startWithHandler:^(NSURLResponse *response, NSError *error, NSData *data) {
-        if (data)
-        {
-            //NSDictionary *info = [[CJSONDeserializer deserializer] deserializeAsDictionary:data error:&error];
-            NSDictionary *info = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-            if (info)
-            {
-                [[NSUserDefaults standardUserDefaults] setObject:info forKey:@"info"];
-                [[NSUserDefaults standardUserDefaults] synchronize];
-                [self updateCheck];
-            }
-        }
-    }];
-}
-
-- (void)updateCheck
-{
-    NSString *currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    NSDictionary *info = [[NSUserDefaults standardUserDefaults] objectForKey:@"info"];
-    if (info)
-    {
-        updateUrl = [info objectForKey:@"downloadurl"];
-        NSString *latestVersion = [info objectForKey:@"version"];
-        
-        NSArray *currentVersionComponent = [currentVersion componentsSeparatedByString:@"."];
-        NSArray *latestVersionComponent = [latestVersion componentsSeparatedByString:@"."];
-        
-        BOOL isLatest = YES;
-        for (int i=0;i<[latestVersionComponent count];i++)
-        {
-            if ([currentVersionComponent count]<i+1)
-            {
-                if ([[latestVersionComponent objectAtIndex:i] intValue] > 0)
-                {
-                    isLatest = NO;
-                    break;
-                }
-            }
-            else if ([[currentVersionComponent objectAtIndex:i] intValue] < [[latestVersionComponent objectAtIndex:i] intValue])
-            {
-                isLatest = NO;
-                break;
-            }
-            else if ([[currentVersionComponent objectAtIndex:i] intValue] > [[latestVersionComponent objectAtIndex:i] intValue])
-            {
-                break;
-            }
-        }
-        
-        if (!isLatest)
-        {
-            [updateButton setHidden:NO];
-        }else {
-            [updateButton setHidden:YES];
-        }
-    }
 }
 
 -(IBAction)showInfoPopover:(id)sender
@@ -123,20 +61,6 @@
     [NSApp terminate:sender];
 }
 
-- (IBAction)openSina:(id)sender 
-{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://weibo.com/writecodes"]];
-}
-
-- (IBAction)openHome:(id)sender
-{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.tanhao.me"]];
-}
-
-- (IBAction)updateClick:(id)sender
-{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:updateUrl]];
-}
 
 -(IBAction)timerAction:(id)sender
 {
@@ -150,12 +74,13 @@
     
     NSInteger currentHour = [dateComponents hour];
     NSInteger currentMinute = [dateComponents minute];
-    NSInteger currentSecond = [dateComponents second];
+    //NSInteger currentSecond = [dateComponents second];
     NSInteger currentWeek = [dateComponents weekday];
     
     NSString *allWeeks[] = {@"日",@"一",@"二",@"三",@"四",@"五",@"六"};
     
-    NSString *timeString = [NSString stringWithFormat:@"%02ld%@%02ld %@",currentHour,currentSecond%2?@" ":@":",currentMinute,allWeeks[currentWeek-1]];
+    //NSString *timeString = [NSString stringWithFormat:@"%02ld%@%02ld %@",currentHour,currentSecond%2?@" ":@":",currentMinute,allWeeks[currentWeek-1]];
+    NSString *timeString = [NSString stringWithFormat:@" %02ld%@%02ld %@",currentHour,@":",currentMinute,allWeeks[currentWeek-1]];
     [timeField setStringValue:timeString];
     
     if ((year&month&day == 0)
@@ -172,7 +97,7 @@
         if (![[self popover] isShown])
         {
             NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
-            NSString *htmlPath = [resourcesPath stringByAppendingString:@"/calendarHTML/test.html"];
+            NSString *htmlPath = [resourcesPath stringByAppendingString:@"/calendarHTML/index.html"];
             [[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:htmlPath]]];
             [webView setDrawsBackground:NO];
         }
